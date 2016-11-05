@@ -13,12 +13,20 @@ def sum_array(batman)
   return total
 end
 
-def find_item(find_me, hogwarts)
+def find_item(item_to_find, hogwarts)
   for house in hogwarts
-    return true if house == find_me
+    return true if house == item_to_find
   end
   return false
 end
   #if item == hogwarts
 
-  def first_key_name(
+  def first_key_name(hash_name)
+    return hash_name.keys[0]
+  end
+
+def array_of_capitals(capitals)
+return [:countries][:capitals]
+end
+
+

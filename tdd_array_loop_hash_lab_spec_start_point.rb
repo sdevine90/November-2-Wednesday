@@ -39,14 +39,29 @@ end
       'Val'  => 1356,
       'Jay' => 1
     }
-    
-    
-    assert_equal(sandy)
+    result = first_key_name(teacher_wallets)
+    assert_equal("Sandy", result)
   end
 
 
-#   def test_array_of_capitals
+ def test_array_of_capitals
+  countries = {
+    uk: {
+      capital: 'London',
+      population: 60
+    },
+    france: {
+      capital: 'Paris',
+      population: 70
+    },
+    italy: {
+      capital: 'Rome',
+      population: 56
+    }
+  }
+  result = array_of_capitals(countries)
+  assert_equal(:capital, result)
 
    end
 
-# end
+end
